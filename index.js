@@ -36,10 +36,13 @@ function addNumbers(num1, num2) {
  * the returned value should look like: 'Goodbye, Andy. Have a great day.'
  * 
 */
-function sayGoodbye(/* code here */) {
-  /* code here */
+
+
+function sayGoodbye(name) {
+  console.log('Goodbye,', `${name}`,'. Have a great day.');
 }
 
+sayGoodbye('Rob');
 /**
  * ### Challenge `temperatureCtoF`
  * 
@@ -158,7 +161,7 @@ function isItAnApple(/* code here */) {
 
 
 
-/*
+
 // ⭐️ Example Test Data ⭐️
 
 var inventory = [
@@ -176,12 +179,7 @@ var inventory = [
   { id: 12, car_make: "Lotus", car_model: "Esprit", car_year: 2004 },
   { id: 13, car_make: "Chevrolet", car_model: "Cavalier", car_year: 1997 },
   { id: 14, car_make: "Dodge", car_model: "Ram Van 1500", car_year: 1999 }
-  /// ... Truncated
 ]
-*/
-
-// Data from file 
-var data = require('data./inventory.js'); 
 
 /**
   * ### Example Array Challenge:
