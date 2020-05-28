@@ -151,7 +151,6 @@ console.log(getName({id: 5, name: 'Leia', email: 'leia@leia.com'}));
  * passing in [ 'orange', 'grape', 'apple', 'banana', 'mango' ] as the argument,
  * the returned value should be: 2.
 */
-let appleArray = [];
 
 function appleIndex([string1, string2, string3, string4, string5]) {
    let appleArray = [string1, string2, string3, string4, string5];
@@ -175,12 +174,20 @@ console.log(appleIndex(['orange', 'grape', 'apple', 'banana', 'mango']));
  * passing in [ 'orange', 'apple', 'banana', 'apples', 'apple', 'mango' ] as the argument,
  * the returned value should be: [ false, true, false, false, true, false ].
 */
-function isItAnApple(/* code here */) {
-  /* code here */
+
+function isItAnApple([string1, string2, string3, string4, string5, string6]) {
+  let appleArray = [string1, string2, string3, string4, string5, string6];
+  let answerArray = [];
+  appleArray.forEach(value =>
+    { if(value !== "apple") {
+      answerArray.push(false);
+    } else {
+      answerArray.push(true);
+    }
+  });
+  return answerArray;
 }
-
-
-
+console.log(isItAnApple([ 'orange', 'apple', 'banana', 'apples', 'apple', 'mango' ]));
 
 // ⭐️ Example Test Data ⭐️
 
